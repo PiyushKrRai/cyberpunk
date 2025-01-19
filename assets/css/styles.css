@@ -142,7 +142,7 @@
 }
 .about{
   display: inline-block;
-  background-image: url("/assets/imgs/dots.svg");
+  background-image: url("dots.svg");
   padding: 2.5rem;
   padding-top: 0;
   align-content: center;
@@ -183,7 +183,7 @@
 }
 
 .timeline-section{
-  background-image: url(./assets/imgs/lines.svg);
+  background-image: url(lines.svg);
   background-size: 50rem;
   background-repeat: repeat;
 }

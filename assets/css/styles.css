@@ -183,7 +183,7 @@
 }
 
 .timeline-section{
-  background-image: url(/assets/imgs/lines.svg);
+  background-image: url(~/assets/imgs/lines.svg);
   background-size: 50rem;
   background-repeat: repeat;
 }

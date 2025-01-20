@@ -40,6 +40,7 @@ var x = setInterval(function() {
 }, 1000);
 
 
+
 // =================Navigation Menu=================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -52,3 +53,17 @@ document.addEventListener('DOMContentLoaded', function() {
     navList.classList.toggle("active");
   });
 });
+
+function changeClass() {
+  var x = document.getElementsByClassName('cyber-button-small');
+  var width = (window.innerWidth > 0) ? window.innerWidth : screen.Width;
+  console.log(width);
+  if(x.length > 0) {
+      if(width <= 640) {
+          x[0].className ='cyber-button bg-red'; 
+      } else {
+          x[1].className = "cyber-button-small";
+      }
+  }
+}
+

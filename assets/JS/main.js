@@ -10,7 +10,6 @@ document.addEventListener("scroll", () => {
 
 
 // Set the date we're counting down to
-=======
 // =================TIMER================
   
 var countDownDate = new Date("Mar 8, 2025 00:00:00").getTime();

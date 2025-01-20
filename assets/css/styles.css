@@ -390,17 +390,19 @@ section {
   .front-layer{
     background-image: url('front-m.png');
   }
-  /* .timeline .column .title h1 {
+  /*.timeline .column .title h1 {
     font-size: 40px;
-  }
+  }*/
 
   .timeline .column .title h2 {
     font-size: 25px;
-  } */
+  } 
 
   .about {
     padding: 1.5rem;
   }
+ 
+
 }
 
 @media screen and (max-width:427px){
@@ -414,5 +416,10 @@ section {
 
   .navbar-section{
     background-color: transparent;
+  }
+
+  .timeline {
+    width: 100%;
+    margin-left: 0;
   }
 }

@@ -27,8 +27,10 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="timer"
-  document.getElementById("timer").innerHTML = days + " : " + hours + " : "
-  + minutes + " : " + seconds + "  ";
+
+  // ===========need to fix the timer to display in the format of days:hours:minutes:seconds==========
+  // document.getElementById("timer").innerHTML = days + " : " + hours + " : "
+  // + minutes + " : " + seconds + "  ";
     
   // If the count down is over, write some text 
   if (distance < 0) {
@@ -36,3 +38,17 @@ var x = setInterval(function() {
     document.getElementById("timer").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+
+// =================Navigation Menu=================
+
+document.addEventListener('DOMContentLoaded', function() {
+  const navList = document.querySelector(".nav-list");
+  const navToggler = document.querySelector(".nav-toggler");
+  // console.log(navList.innerHTML);
+
+  navToggler.addEventListener('click', () => {
+    navToggler.classList.toggle("open");
+    navList.classList.toggle("active");
+  });
+});

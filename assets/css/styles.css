@@ -128,6 +128,18 @@ section {
   /*transition: transform 0.1s ease-out; /* Smooth scrolling */
 }
 
+.background-layer{
+  background-image: url('back.png');
+}
+
+.middle-layer{
+  background-image: url('logo-main.png');
+}
+
+.front-layer{
+  background-image: url('front.png');
+}
+
 .buttons {
   position: absolute;
   top: 75vh;
@@ -301,6 +313,23 @@ section {
 }
 
 @media screen and (max-width:768px) {
+
+  .buttons {
+    top: 60vh;
+  }
+
+  .background-layer{
+    background-image: url('back-m.png');
+  }
+  
+  .middle-layer{
+    background-image: url('logo-main-m.png');
+    background-size: 200%;
+  }
+  
+  .front-layer{
+    background-image: url('front-m.png');
+  }
   /* .timeline .column .title h1 {
     font-size: 40px;
   }

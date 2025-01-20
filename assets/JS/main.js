@@ -36,3 +36,17 @@ var x = setInterval(function() {
     document.getElementById("timer").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+
+function changeClass() {
+  var x = document.getElementsByClassName('cyber-button-small');
+  var width = (window.innerWidth > 0) ? window.innerWidth : screen.Width;
+  console.log(width);
+  if(x.length > 0) {
+      if(width <= 640) {
+          x[0].className ='cyber-button bg-red'; 
+      } else {
+          x[1].className = "cyber-button-small";
+      }
+  }
+}

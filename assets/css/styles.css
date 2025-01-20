@@ -56,6 +56,66 @@ section {
   right: 0;
 }
 
+.nav-menu .nav-toggler {
+  height: 40px;
+  width: 45px;
+  /* border: 1px solid var(--white); */
+  cursor: pointer;
+  position: fixed;
+  left: 300px;
+  top: 20px;
+  /* border-radius: 5px; */
+  /* background: var(--red); */
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.nav-menu .nav-toggler span {
+  height: 2px;
+  width: 18px;
+  background: var(--yellow);
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  left: -7px;
+}
+
+.nav-menu .nav-toggler.open span {
+  background-color: transparent;
+}
+
+.nav-menu .nav-toggler span::before {
+  content: '';
+  height: 2px;
+  width: 18px;
+  background: var(--yellow);
+  position: absolute;
+  top: -6px;
+  left: 0;
+}
+
+.nav-menu .nav-toggler.open span::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.nav-menu .nav-toggler span::after {
+  content: '';
+  height: 2px;
+  width: 18px;
+  background: var(--yellow);
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+
+.nav-menu .nav-toggler.open span::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
 .nav-menu li {
   display: inline;
   padding: 1rem;
@@ -340,5 +400,19 @@ section {
 
   .about {
     padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width:427px){
+  .nav-menu ul {
+    display: none;
+  }
+
+  .nav-menu .nav-toggler {
+    display: block;
+  }
+
+  .navbar-section{
+    background-color: transparent;
   }
 }

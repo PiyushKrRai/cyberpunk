@@ -59,16 +59,12 @@ section {
 .nav-menu .nav-toggler {
   height: 40px;
   width: 45px;
-  /* border: 1px solid var(--white); */
   cursor: pointer;
   position: fixed;
   left: 300px;
   top: 20px;
-  /* border-radius: 5px; */
-  /* background: var(--red); */
   display: none;
-  align-items: center;
-  justify-content: center;
+  z-index: 3;
   transition: all 0.3s ease;
 }
 
@@ -120,6 +116,15 @@ section {
   display: inline;
   padding: 1rem;
   white-space: nowrap;
+}
+
+.nav-list.active{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--dark);
+  z-index: 2;
+  left: 0;
 }
 
 .nav-item:hover {
@@ -414,5 +419,9 @@ section {
 
   .navbar-section{
     background-color: transparent;
+  }
+
+  .nav-list{
+    left: -570px;
   }
 }

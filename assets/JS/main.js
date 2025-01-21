@@ -45,17 +45,45 @@ var x = setInterval(function () {
 function navFunction() {
   const navList = document.querySelector(".nav-list");
   const navToggler = document.querySelector(".nav-toggler");
+  const navMenu = document.querySelector(".nav-menu");
+  const body = document.body;
 
-  navToggler.addEventListener('click', toggleNav());
+  function updateNavList() {
+    if (window.innerWidth > 576) {
+      navList.classList.remove("active");
+      navMenu.classList.remove("active");
+      navToggler.classList.remove("open");
+      body.classList.remove("nav-open");
+    }
+  }
 
-  function toggleNav() {
+  // Check screen width on load
+  updateNavList();
+
+  // Check screen width on resize
+  window.addEventListener('resize', updateNavList);
+
+  // Toggle classes on navToggler click
+  navToggler.addEventListener("click", function() {
     navToggler.classList.toggle("open");
     navList.classList.toggle("active");
-  }
+    navMenu.classList.toggle("active");
+    body.classList.toggle("nav-open");
+  });
+
+  // Remove classes on navList item click
+  navList.querySelectorAll('li').forEach(item => {
+    item.addEventListener('click', function() {
+      navToggler.classList.remove("open");
+      navList.classList.remove("active");
+      navMenu.classList.remove("active");
+      body.classList.remove("nav-open");
+    });
+  });
 }
 
 // Initialize the navigation function when the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', navFunction);
+document.addEventListener('DOMContentLoaded', navFunction());
 
 function changeClass() {
   var x = document.getElementsByClassName('cyber-button-small');

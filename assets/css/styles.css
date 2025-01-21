@@ -25,6 +25,10 @@ body {
   background-color: var(--yellow) !important;
 }
 
+body.nav-open {
+  overflow: hidden;
+}
+
 section {
   top: -3.5vh;
 }
@@ -56,15 +60,25 @@ section {
   right: 0;
 }
 
+.nav-menu.active {
+  height: 100vh;
+  width: 100%;
+  max-width: 100vw;
+  backdrop-filter: blur(10px);
+  background-color: #00000084;
+  z-index: 5;
+  animation: slideNav 0.2s ease-in-out;
+}
+
 .nav-menu .nav-toggler {
   height: 40px;
   width: 45px;
   cursor: pointer;
   position: fixed;
-  left: 300px;
+  right: 20px;
   top: 20px;
   display: none;
-  z-index: 3;
+  z-index: 10;
   transition: all 0.3s ease;
 }
 
@@ -118,20 +132,25 @@ section {
   white-space: nowrap;
 }
 
-.nav-list.active{
+.nav-list.active {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  background-color: var(--dark);
-  z-index: 2;
-  left: 0;
+
+}
+
+@keyframes slideNav {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 .nav-item:hover {
   background-color: rgb(160, 160, 0);
   transition: 0.4s;
-
-
 }
 
 /*timer*/
@@ -193,15 +212,15 @@ section {
   /*transition: transform 0.1s ease-out; /* Smooth scrolling */
 }
 
-.background-layer{
+.background-layer {
   background-image: url('back.png');
 }
 
-.middle-layer{
+.middle-layer {
   background-image: url('logo-main.png');
 }
 
-.front-layer{
+.front-layer {
   background-image: url('front.png');
 }
 
@@ -379,49 +398,51 @@ section {
 
 @media screen and (max-width:768px) {
 
-  .buttons {
-    top: 60vh;
-  }
-
-  .background-layer{
-    background-image: url('back-m.png');
-  }
-  
-  .middle-layer{
-    background-image: url('logo-main-m.png');
-    background-size: 200%;
-  }
-  
-  .front-layer{
-    background-image: url('front-m.png');
-  }
-  /* .timeline .column .title h1 {
-    font-size: 40px;
-  }
-
-  .timeline .column .title h2 {
-    font-size: 25px;
-  } */
-
   .about {
     padding: 1.5rem;
   }
 }
 
-@media screen and (max-width:427px){
-  .nav-menu ul {
-    display: none;
+@media screen and (max-width:576px) {
+
+  .background-layer {
+    background-image: url('back-m.png');
+  }
+
+  .middle-layer {
+    background-image: url('logo-main-m.png');
+    background-size: 200%;
+  }
+
+  .front-layer {
+    background-image: url('front-m.png');
+  }
+
+  .buttons {
+    top: 60vh;
+  }
+
+  .navbar-section {
+    background-color: transparent;
+    padding-top: 0;
   }
 
   .nav-menu .nav-toggler {
     display: block;
   }
 
-  .navbar-section{
-    background-color: transparent;
+  .nav-menu ul {
+    display: none;
+    margin-bottom: 0 !important;
   }
 
-  .nav-list{
-    left: -570px;
+  .nav-list li {
+    padding: 0.5rem;
+    align-self: center;
+  }
+
+  .nav-list.active {
+    padding: 1rem;
+    margin-top: 2.5rem;
   }
 }

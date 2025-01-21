@@ -1,3 +1,4 @@
+// =================Parallax================
 document.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
 
@@ -9,6 +10,9 @@ document.addEventListener("scroll", () => {
 
 
 // Set the date we're counting down to
+=======
+// =================TIMER================
+  
 var countDownDate = new Date("Mar 8, 2025 00:00:00").getTime();
 
 // Update the count down every 1 second

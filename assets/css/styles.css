@@ -37,7 +37,7 @@ section {
 .navbar-section {
   width: 100%;
   position: fixed;
-  z-index: 2;
+  z-index: 5;
   background-color: #00000084;
   color: #fff;
   padding-top: 1rem;

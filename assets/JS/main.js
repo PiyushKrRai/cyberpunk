@@ -12,8 +12,8 @@ document.addEventListener("scroll", () => {
 // Set the date we're counting down to
 
 // =================TIMER================
-  
-var countDownDate = new Date("Mar 8, 2025 00:00:00").getTime();
+
+var countDownDate = new Date("Feb 5, 2025 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -33,14 +33,33 @@ var x = setInterval(function () {
   // Output the result in an element with id="timer"
 
   // ===========need to fix the timer to display in the format of days:hours:minutes:seconds==========
-  // document.getElementById("timer").innerHTML = days + " : " + hours + " : "
-  // + minutes + " : " + seconds + "  ";
+
+  console.log(document.querySelector("#days-count").textContent);
+  document.querySelector("#days-count").textContent = days;
+  document.querySelector("#hours-count").textContent = hours;
+  document.querySelector("#mins-count").textContent = minutes;
+  document.querySelector("#secs-count").textContent = seconds;
 
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("timer").innerHTML = "EXPIRED";
+    document.querySelector(".timer-caption").innerHTML = "Registration Closed";
+    document.querySelector("#days-count").textContent = "00";
+    document.querySelector("#hours-count").textContent = "00";
+    document.querySelector("#mins-count").textContent = "00";
+    document.querySelector("#secs-count").textContent = "00";
+    return;
   }
+
+
+  // document.getElementById("timer").innerHTML = days + " : " + hours + " : "
+  //   + minutes + " : " + seconds + "  ";
+
+  // // If the count down is over, write some text 
+  // if (distance < 0) {
+  //   clearInterval(x);
+  //   document.getElementById("timer").innerHTML = "EXPIRED";
+  // }
 }, 1000);
 
 
@@ -68,7 +87,7 @@ function navFunction() {
   window.addEventListener('resize', updateNavList);
 
   // Toggle classes on navToggler click
-  navToggler.addEventListener("click", function() {
+  navToggler.addEventListener("click", function () {
     navToggler.classList.toggle("open");
     navList.classList.toggle("active");
     navMenu.classList.toggle("active");
@@ -77,7 +96,7 @@ function navFunction() {
 
   // Remove classes on navList item click
   navList.querySelectorAll('li').forEach(item => {
-    item.addEventListener('click', function() {
+    item.addEventListener('click', function () {
       navToggler.classList.remove("open");
       navList.classList.remove("active");
       navMenu.classList.remove("active");

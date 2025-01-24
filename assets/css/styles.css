@@ -155,31 +155,69 @@ section {
 
 /*timer*/
 
-/*.timer-section {
-    width: 100%;
-    align-content: center;
-    text-align: center;
-    font-size: 50px;
-    padding: 10px;
-    margin-top: 75vh;
-    color: yellow;
-    z-index: 1;
-    position: absolute
-  }
-  .timer-box{
-    background-color: rgba(0, 0, 0, 0.422);
-    width: 30%;
-    padding: 1rem;
-  }
+.timer-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding: 5px;
+  margin-top: 55vh;
+  align-items: center;
+  color: yellow;
+  z-index: 1;
+  position: absolute;
+}
 
-  .timer-caption{
-    font-size: 28px;
-  }*/
+.timer-box {
+  background-color: #0fefff71;
+  backdrop-filter: blur(10px);
+  width: fit-content;
+  padding: 1rem;
+}
+
+.timer-box.cyber-tile{
+  padding: 0;
+}
+
+.countdown-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+}
+
+.timer-div {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.timer-div.cyber-tile {
+  background-color: var(--blue);
+  color: var(--yellow);
+  width: 70px;
+  height: fit-content;
+  padding: 0.5rem;
+}
+
+.timer-div.cyber-tile h1{
+  font-size: 28px;
+}
+
+.timer-div p{
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.timer-caption {
+  font-size: 25px;
+  width: fit-content;
+  margin: 0.5rem auto;
+}
 
 .countdown {
   padding-bottom: 0;
   margin: 0;
-
   color: red;
   vertical-align: middle;
 }
@@ -387,7 +425,7 @@ section {
 
 
 
-.prize-section{
+.prize-section {
   background-image: url("lines.svg");
   padding: 2.5rem;
   padding-top: 0;
@@ -399,38 +437,42 @@ section {
   margin-right: 0;
   text-align: center;
 }
-.prize-section h2{
+
+.prize-section h2 {
   text-align: center;
 }
-.prize-row{
+
+.prize-row {
   width: 100%;
   margin-top: 2rem;
 }
+
 .prize {
   margin: 1rem;
   padding: 1rem !important;
 }
 
-.prize-img{
+.prize-img {
   width: 75% !important;
 }
 
-.first-prize{
-  top:-2rem;
+.first-prize {
+  top: -2rem;
 }
 
-.other-prize{
-  top:2rem;
+.other-prize {
+  top: 2rem;
 }
 
 
-.tracks-section{
+.tracks-section {
   background-image: url(dots.svg);
   background-size: 50rem;
   background-repeat: repeat;
   background-size: cover;
 }
-.tracks-section h2{
+
+.tracks-section h2 {
   text-align: center;
 }
 
@@ -488,7 +530,7 @@ section {
   }
 
   .buttons {
-    top: 60vh;
+    top: 70vh;
   }
 
   .navbar-section {
@@ -518,5 +560,17 @@ section {
   .timeline {
     width: 100%;
     margin-left: 0;
+  }
+
+  .timer-section{
+    justify-content: space-evenly;
+  }
+
+  .timer-caption {
+    font-size: 20px;
+  }
+
+  .timer-box.cyber-tile{
+    width: 90vw;
   }
 }

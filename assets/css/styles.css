@@ -10,6 +10,14 @@
   --black: #000;
   --white: #fff;
   --dark: #333;
+
+  /*theme variables*/
+  --dark: #001517;
+  --dark-gray: #002B2E;
+  --medium-gray: #004044;
+  --light-gray: #00565C;
+  --yellow: #F2FB06;
+  /*theme variables*/
 }
 
 /* Reset */
@@ -22,7 +30,7 @@
 
 body {
   font-family: 'Oxanium' !important;
-  background-color: var(--yellow) !important;
+  background-color: var(--dark) !important;
 }
 
 body.nav-open {
@@ -573,4 +581,18 @@ section {
   .timer-box.cyber-tile{
     width: 90vw;
   }
+}
+
+
+
+/*==================================
+===========WALLPAPER.HTML===========
+==================================*/
+
+.wall-banner-img{
+  width: 100%;
+}
+
+.cyber-h{
+  color: #fff !important; 
 }

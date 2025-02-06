@@ -308,14 +308,16 @@ section {
   padding: 1rem;
 }
 
-.about-info h2 {
-  text-align: center;
+.about-info h2.cyber-title {
+  left: 20px;
 }
 
 .about-info p {
-  background-color: #ffffff7d;
+  /* background-color: #ffffff7d; */
   padding: 1rem;
   width: 100%;
+  color: #ffffff;
+  background-image: url("Box-element.svg");
 }
 
 .about-info p.cyber-tile {

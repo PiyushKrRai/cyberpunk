@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
 
 :root {
   --yellow: #f8ef02;
@@ -13,10 +13,10 @@
 
   /*theme variables*/
   --dark: #001517;
-  --dark-gray: #002B2E;
+  --dark-gray: #002b2e;
   --medium-gray: #004044;
-  --light-gray: #00565C;
-  --yellow: #F2FB06;
+  --light-gray: #00565c;
+  --yellow: #f2fb06;
   /*theme variables*/
 }
 
@@ -50,7 +50,7 @@
 }
 
 body {
-  font-family: 'Oxanium' !important;
+  font-family: "Oxanium" !important;
   background-color: var(--dark) !important;
 }
 
@@ -126,7 +126,7 @@ section {
 }
 
 .nav-menu .nav-toggler span::before {
-  content: '';
+  content: "";
   height: 2px;
   width: 18px;
   background: var(--yellow);
@@ -141,7 +141,7 @@ section {
 }
 
 .nav-menu .nav-toggler span::after {
-  content: '';
+  content: "";
   height: 2px;
   width: 18px;
   background: var(--yellow);
@@ -164,7 +164,6 @@ section {
 .nav-list.active {
   display: flex;
   flex-direction: column;
-
 }
 
 @keyframes slideNav {
@@ -280,15 +279,15 @@ section {
 }
 
 .background-layer {
-  background-image: url('back.png');
+  background-image: url("back.png");
 }
 
 .middle-layer {
-  background-image: url('logo-main.png');
+  background-image: url("logo-main.png");
 }
 
 .front-layer {
-  background-image: url('front.png');
+  background-image: url("front.png");
 }
 
 .buttons {
@@ -306,7 +305,7 @@ section {
 .about-seperator {
   z-index: 1;
   top: -3.5vh;
-  height: .25rem;
+  height: 0.25rem;
   position: absolute;
 }
 
@@ -347,7 +346,7 @@ section {
 .about-info p {
   /* background-color: #ffffff7d; */
   padding: 1rem;
-  width: 100%;
+  width: 95%;
   color: #ffffff;
   /* background-image: url("Box-element.svg"); */
 }
@@ -360,7 +359,7 @@ section {
 .stat-info {
   margin: 1rem;
   padding: 1rem !important;
-  background: url('square-box.svg') no-repeat;
+  /* background: url("square-box.svg") no-repeat; */
   background-size: contain;
   width: 12rem;
   min-height: fit-content;
@@ -461,9 +460,6 @@ section {
   margin-bottom: -20rem;
 }
 
-
-
-
 .prize-section {
   background-image: url("lines.svg");
   padding: 2.5rem;
@@ -503,7 +499,6 @@ section {
   top: 2rem;
 }
 
-
 .tracks-section {
   background-image: url(dots.svg);
   background-size: 50rem;
@@ -515,27 +510,7 @@ section {
   text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:1440px) {
-
+@media screen and (max-width: 1440px) {
   .d-flex {
     flex-wrap: wrap;
   }
@@ -543,29 +518,26 @@ section {
   .about {
     background-size: contain;
   }
-
 }
 
-@media screen and (max-width:768px) {
-
+@media screen and (max-width: 768px) {
   .about {
     padding: 1.5rem;
   }
 }
 
-@media screen and (max-width:576px) {
-
+@media screen and (max-width: 576px) {
   .background-layer {
-    background-image: url('back-m.png');
+    background-image: url("back-m.png");
   }
 
   .middle-layer {
-    background-image: url('logo-main-m.png');
+    background-image: url("logo-main-m.png");
     background-size: 200%;
   }
 
   .front-layer {
-    background-image: url('front-m.png');
+    background-image: url("front-m.png");
   }
 
   .buttons {
@@ -613,8 +585,6 @@ section {
     width: 90vw;
   }
 }
-
-
 
 /*==================================
 ===========WALLPAPER.HTML===========

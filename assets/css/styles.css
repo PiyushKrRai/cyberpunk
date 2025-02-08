@@ -29,16 +29,17 @@
   height: 70px;
   padding: 1rem;
   width: fit-content;
+  color: var(--yellow);
   font-size: 2.5rem !important;
 }
 
-.cyber-desc-box{
+/* .cyber-desc-box{
   display: flex;
   position: relative;
   background: url("box-element-desktop.svg") no-repeat;
   background-size:cover;
   padding: 1rem;
-}
+} */
 
 /* Reset */
 * {
@@ -204,11 +205,11 @@ section {
   padding: 1rem;
 }
 
-.timer-box.cyber-tile{
+.timer-box.cyber-tile {
   padding: 0;
 }
 
-.countdown-box{
+.countdown-box {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -228,11 +229,11 @@ section {
   padding: 0.5rem;
 }
 
-.timer-div.cyber-tile h1{
+.timer-div.cyber-tile h1 {
   font-size: 28px;
 }
 
-.timer-div p{
+.timer-div p {
   margin-bottom: 0;
   font-size: 16px;
 }
@@ -312,7 +313,7 @@ section {
 .about {
   display: inline-block;
   background-image: url("dots.svg");
-  background:linear-gradient(#004044, #001517);
+  background: linear-gradient(#004044, #001517);
   padding: 2.5rem;
   padding-top: 0;
   align-content: center;
@@ -336,6 +337,7 @@ section {
   text-align: justify;
   justify-content: center !important;
   padding: 1rem;
+  width: 100%;
 }
 
 .about-info h2 {
@@ -343,8 +345,11 @@ section {
 }
 
 .about-info p {
-  padding: 1.5rem;
-  color: #fff;
+  /* background-color: #ffffff7d; */
+  padding: 1rem;
+  width: 100%;
+  color: #ffffff;
+  /* background-image: url("Box-element.svg"); */
 }
 
 .about-info p.desc-container {
@@ -356,8 +361,8 @@ section {
   margin: 1rem;
   padding: 1rem !important;
   background: url('square-box.svg') no-repeat;
-  background-size: contain; 
-  width: 12rem; 
+  background-size: contain;
+  width: 12rem;
   min-height: fit-content;
   box-sizing: border-box;
 }
@@ -596,7 +601,7 @@ section {
     margin-left: 0;
   }
 
-  .timer-section{
+  .timer-section {
     justify-content: space-evenly;
   }
 
@@ -604,7 +609,7 @@ section {
     font-size: 20px;
   }
 
-  .timer-box.cyber-tile{
+  .timer-box.cyber-tile {
     width: 90vw;
   }
 }
@@ -615,10 +620,10 @@ section {
 ===========WALLPAPER.HTML===========
 ==================================*/
 
-.wall-banner-img{
+.wall-banner-img {
   width: 100%;
 }
 
-.cyber-h{
-  color: #fff !important; 
+.cyber-h {
+  color: #fff !important;
 }

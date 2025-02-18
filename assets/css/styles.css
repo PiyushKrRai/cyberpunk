@@ -18,28 +18,10 @@
   --light-gray: #00565c;
   --yellow: #f2fb06;
   /*theme variables*/
-}
 
-.cyber-title-box {
-  display: flex;
-  align-items: center;
-  position: relative;
-  background: url("title-box.svg") no-repeat;
-  background-size: contain;
-  height: 70px;
-  padding: 1rem;
-  width: fit-content;
-  color: var(--yellow);
-  font-size: 2.5rem !important;
+  --linear-gradiant1: #004044;
+  --linear-gradiant2: #001517;
 }
-
-/* .cyber-desc-box{
-  display: flex;
-  position: relative;
-  background: url("box-element-desktop.svg") no-repeat;
-  background-size:cover;
-  padding: 1rem;
-} */
 
 /* Reset */
 * {
@@ -60,6 +42,11 @@ body.nav-open {
 
 section {
   top: -3.5vh;
+}
+
+
+.pad-15 {
+  padding-left: 1.5rem;
 }
 
 /*Navbar*/
@@ -302,6 +289,18 @@ section {
   margin: 1rem;
 }
 
+.cyber-title-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: url("title-box.svg") no-repeat;
+  background-size: contain;
+  height: 70px;
+  padding: 1rem;
+  width: fit-content;
+  color: var(--yellow);
+}
+
 .about-seperator {
   z-index: 1;
   top: -3.5vh;
@@ -311,7 +310,7 @@ section {
 
 .about {
   display: inline-block;
-  background-image: url("dots.svg");
+  /* background-image: url("dots.svg"); */
   background: linear-gradient(#004044, #001517);
   padding: 2.5rem;
   padding-top: 0;
@@ -473,6 +472,40 @@ section {
   text-align: center;
 }
 
+.prize-pool::before {
+  content: '';
+  background-image: url('prize-upper-element.svg') !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  position: relative;
+  color: #fff;
+  margin-top: 1rem;
+  scale: 0.8;
+}
+
+.prize-pool>h1.title-h1 {
+  margin-bottom: 0px;
+}
+
+.prize-pool::after {
+  content: '';
+  background-image: url('prize-side-element.svg') !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-position: right;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  margin-top: -1rem;
+  right: -2.5rem;
+  scale: 1;
+}
+
 .prize-section h2 {
   text-align: center;
 }
@@ -488,7 +521,15 @@ section {
 }
 
 .prize-img {
-  width: 75% !important;
+  width: 65% !important;
+  padding-top: 1rem;
+}
+
+.prize-row>.prize {
+  background-image: url('box-frame.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .first-prize {
@@ -499,15 +540,73 @@ section {
   top: 2rem;
 }
 
-.tracks-section {
-  background-image: url(dots.svg);
-  background-size: 50rem;
-  background-repeat: repeat;
-  background-size: cover;
-}
-
 .tracks-section h2 {
   text-align: center;
+}
+
+.tracks-section {
+  padding: 2rem;
+  padding-bottom: 5rem;
+}
+
+.track-start::after {
+  content: '';
+  background-image: url('track-element.svg') !important;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  bottom: 10rem;
+  height: 130px;
+  width: 100%;
+}
+
+.track-start::before {
+  content: '';
+  background-image: url('track-element.svg') !important;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  bottom: 10rem;
+  height: 130px;
+  width: 100%;
+  transform: rotateY(180deg);
+}
+
+.track-end::after{
+  content: '';
+  background-image: url('track-element.svg') !important;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  top: 10rem;
+  height: 130px;
+  width: 100%;
+  transform: rotateX(180deg);
+}
+
+.track-end::before {
+  content: '';
+  background-image: url('track-element.svg') !important;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  top: 10rem;
+  height: 130px;
+  width: 100%;
+  transform: rotate(180deg);
+}
+
+.track-box {
+  height: fit-content;
+  margin: 0 0.5rem;
+}
+
+.track-box>p>img {
+  filter: drop-shadow(5px 5px 5px var(--yellow));
 }
 
 @media screen and (max-width: 1440px) {

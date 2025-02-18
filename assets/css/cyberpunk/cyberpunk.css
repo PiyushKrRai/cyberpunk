@@ -48,6 +48,9 @@
     --yellow: #F2FB06;
     /*theme variables*/
 
+    --linear-gradiant1:#004044;
+    --linear-gradiant2:#001517;
+
 
     --fg: var(--black);
     --bg: transparent;
@@ -276,6 +279,11 @@ body {
 
 .ac-dark {
     --ac: var(--dark);
+}
+
+.bg-linear{
+    --bg:var(--linear-gradiant1);
+    background-color: linear-gradient( var(--linear-gradiant1) 0%, var(--linear-gradiant2) 100%) !important;
 }
 
 /*#endregion*/
@@ -868,6 +876,27 @@ body {
 
 /*#endregion*/
 
+
+/* Title */
+.cyber-title {
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 2px;
+}
+
+.title-h1{
+    font-size: 3.5rem;
+}
+.title-h2{
+    font-size: 2.5rem;
+}
+.title-h3{
+    font-size: 2rem;
+}
+.title-h4{
+    font-size: 1.5rem;
+}
+
 /*#region tiles*/
 .cyber-tile,
 .cyber-tile-small,
@@ -900,13 +929,13 @@ body {
 
 .cyber-tile-clip::after{
     transform: scaleY(0.95);
-    width: calc(100% - 10px);
     margin-left: 5px;
+    width: calc(100% - 10px);
+    padding: 10px 0px;
 }
 
 .cyber-tile-small::after{
     scale: 0.95;
-
 }
 
 .cyber-tile img,

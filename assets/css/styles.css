@@ -40,10 +40,14 @@ body.nav-open {
   overflow: hidden;
 }
 
+a{
+  text-decoration: none !important;
+  color: black;
+}
+
 section {
   top: -3.5vh;
 }
-
 
 .pad-15 {
   padding-left: 1.5rem;
@@ -665,7 +669,7 @@ section {
 }
 
 .judges-section {
-  background: linear-gradient(var(--blue), #001517);
+  background: linear-gradient(#001517, var(--blue));
 }
 
 .social-links {
@@ -718,6 +722,119 @@ section {
   bottom: 0.5rem;
   height: 100%;
   scale: 1.05;
+}
+
+.footer-section{
+  top: 0 !important;
+}
+
+.footer-content{
+  min-height: 40vh;
+  background-color: var(--black);
+  display: grid;
+  justify-content:  center;
+  grid-template-columns: 25% 50% 25%;
+}
+
+.footer-logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+
+.footer-logo img{
+  height: 4.5rem;
+  margin-bottom: 2rem;
+}
+
+.link-heading h5{
+  font-weight: 900;
+  margin-bottom: 1.25rem;
+}
+
+.footer-link{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 2fr 1fr;
+  flex-wrap: wrap;
+  padding: 0.5rem 2rem;
+}
+
+.footer-link p{
+  color: var(--white);
+  font-weight: 700;
+}
+
+.footer-link a{
+  color: #ffffffab;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.link-heading{
+  margin-top: 1rem;
+}
+
+.footer-location{
+  padding: 0.5rem;
+}
+
+.footer-location img{
+  width: 100%;
+  padding-left: -2rem;
+}
+
+.location-container {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.location-container img {
+  display: block;
+  width: 100%; /* Ensure the image takes the full width of the container */
+}
+
+.location-container iframe {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%; 
+  height: 85%; 
+  border: 0; 
+}
+
+.footer-divider{
+  width: 90vw;
+  display: block;
+  margin: 0 auto;
+}
+
+.orgainsing-partner{
+  margin-top: 2rem;
+}
+
+.organiser-logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+
+.organiser-logo img{
+  height: 4.5rem;
+  margin: 1rem;
+  height: 6rem;
+  border-radius: 3px;
+}
+
+.copyright{
+  color: #ffffffab;
+  padding: 2rem;
 }
 
 @media screen and (max-width: 1440px) {

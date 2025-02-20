@@ -609,29 +609,30 @@ section {
   filter: drop-shadow(5px 5px 5px var(--yellow));
 }
 
-.sponsor-section {
+.sponsor-section,
+.judges-section {
   padding: 2rem;
   padding-bottom: 5rem;
 }
 
-.sponsor-section .prize-row{
+.sponsor-section .prize-row {
   margin-top: 0.5rem;
   flex-wrap: wrap;
 }
 
-.sponsor-section h3{
+.sponsor-section h3 {
   margin-top: 2rem;
 }
 
 .sponsor-box {
   margin: 1rem;
-  height: 15rem; /* Set a fixed height for the card */
+  height: 15rem;
   width: fit-content;
   display: flex;
-  flex-direction: column-reverse; /* Make the h5 title grow upward */
-  overflow: hidden; /* Hide any overflow content */
-  align-items: center; /* Center the content horizontally */
-  justify-content: center; /* Center the content vertically */
+  flex-direction: column-reverse;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
 }
 
 .sponsor-box h5 {
@@ -641,7 +642,7 @@ section {
   align-items: center;
   width: 100%;
   height: 3rem;
-  box-sizing: border-box; /* Include padding in the element's total width and height */
+  box-sizing: border-box;
 }
 
 .sponsor-img {
@@ -650,6 +651,73 @@ section {
   margin-top: 1rem;
   height: 8rem !important;
   width: 8rem !important;
+}
+
+.sponsor-offer {
+  margin: 4rem;
+}
+
+.sponsor-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.judges-section {
+  background: linear-gradient(var(--blue), #001517);
+}
+
+.social-links {
+  font-size: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly !important;
+}
+
+.social-links i {
+  margin: 0.5rem;
+  color: var(--dark-gray);
+  transition: all ease-in-out 0.2s;
+}
+
+.social-links i:hover {
+  color: var(--yellow);
+  scale: 1.05;
+}
+
+.judges-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 1rem;
+  padding: 1rem 1.5rem;
+  background: var(--blue);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.7px);
+  -webkit-backdrop-filter: blur(2.7px);
+  border: 1px solid var(--blue);
+}
+
+.judges-img {
+  height: 12rem;
+  width: fit-content;
+  filter: drop-shadow(0px 0px 10px var(--white));
+}
+
+.judges-profile::after {
+  content: '';
+  background-image: url('/assets/css/box-frame.svg');
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  bottom: 0.5rem;
+  height: 100%;
+  scale: 1.05;
 }
 
 @media screen and (max-width: 1440px) {

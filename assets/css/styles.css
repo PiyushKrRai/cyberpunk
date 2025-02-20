@@ -574,7 +574,7 @@ section {
   transform: rotateY(180deg);
 }
 
-.track-end::after{
+.track-end::after {
   content: '';
   background-image: url('track-element.svg') !important;
   position: absolute;
@@ -607,6 +607,49 @@ section {
 
 .track-box>p>img {
   filter: drop-shadow(5px 5px 5px var(--yellow));
+}
+
+.sponsor-section {
+  padding: 2rem;
+  padding-bottom: 5rem;
+}
+
+.sponsor-section .prize-row{
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.sponsor-section h3{
+  margin-top: 2rem;
+}
+
+.sponsor-box {
+  margin: 1rem;
+  height: 15rem; /* Set a fixed height for the card */
+  width: fit-content;
+  display: flex;
+  flex-direction: column-reverse; /* Make the h5 title grow upward */
+  overflow: hidden; /* Hide any overflow content */
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center the content vertically */
+}
+
+.sponsor-box h5 {
+  margin-top: 0;
+  padding: 0.5rem;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.sponsor-img {
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 1rem;
+  height: 8rem !important;
+  width: 8rem !important;
 }
 
 @media screen and (max-width: 1440px) {

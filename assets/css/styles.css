@@ -40,10 +40,14 @@ body.nav-open {
   overflow: hidden;
 }
 
+a{
+  text-decoration: none !important;
+  color: black;
+}
+
 section {
   top: -3.5vh;
 }
-
 
 .pad-15 {
   padding-left: 1.5rem;
@@ -609,29 +613,30 @@ section {
   filter: drop-shadow(5px 5px 5px var(--yellow));
 }
 
-.sponsor-section {
+.sponsor-section,
+.judges-section {
   padding: 2rem;
   padding-bottom: 5rem;
 }
 
-.sponsor-section .prize-row{
+.sponsor-section .prize-row {
   margin-top: 0.5rem;
   flex-wrap: wrap;
 }
 
-.sponsor-section h3{
+.sponsor-section h3 {
   margin-top: 2rem;
 }
 
 .sponsor-box {
   margin: 1rem;
-  height: 15rem; /* Set a fixed height for the card */
+  height: 15rem;
   width: fit-content;
   display: flex;
-  flex-direction: column-reverse; /* Make the h5 title grow upward */
-  overflow: hidden; /* Hide any overflow content */
-  align-items: center; /* Center the content horizontally */
-  justify-content: center; /* Center the content vertically */
+  flex-direction: column-reverse;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
 }
 
 .sponsor-box h5 {
@@ -641,7 +646,7 @@ section {
   align-items: center;
   width: 100%;
   height: 3rem;
-  box-sizing: border-box; /* Include padding in the element's total width and height */
+  box-sizing: border-box;
 }
 
 .sponsor-img {
@@ -650,6 +655,186 @@ section {
   margin-top: 1rem;
   height: 8rem !important;
   width: 8rem !important;
+}
+
+.sponsor-offer {
+  margin: 4rem;
+}
+
+.sponsor-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.judges-section {
+  background: linear-gradient(#001517, var(--blue));
+}
+
+.social-links {
+  font-size: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly !important;
+}
+
+.social-links i {
+  margin: 0.5rem;
+  color: var(--dark-gray);
+  transition: all ease-in-out 0.2s;
+}
+
+.social-links i:hover {
+  color: var(--yellow);
+  scale: 1.05;
+}
+
+.judges-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 1rem;
+  padding: 1rem 1.5rem;
+  background: var(--blue);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.7px);
+  -webkit-backdrop-filter: blur(2.7px);
+  border: 1px solid var(--blue);
+}
+
+.judges-img {
+  height: 12rem;
+  width: fit-content;
+  filter: drop-shadow(0px 0px 10px var(--white));
+}
+
+.judges-profile::after {
+  content: '';
+  background-image: url('/assets/css/box-frame.svg');
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  bottom: 0.5rem;
+  height: 100%;
+  scale: 1.05;
+}
+
+.footer-section{
+  top: 0 !important;
+}
+
+.footer-content{
+  min-height: 40vh;
+  background-color: var(--black);
+  display: grid;
+  justify-content:  center;
+  grid-template-columns: 25% 50% 25%;
+}
+
+.footer-logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+
+.footer-logo img{
+  height: 4.5rem;
+  margin-bottom: 2rem;
+}
+
+.link-heading h5{
+  font-weight: 900;
+  margin-bottom: 1.25rem;
+}
+
+.footer-link{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 2fr 1fr;
+  flex-wrap: wrap;
+  padding: 0.5rem 2rem;
+}
+
+.footer-link p{
+  color: var(--white);
+  font-weight: 700;
+}
+
+.footer-link a{
+  color: #ffffffab;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.link-heading{
+  margin-top: 1rem;
+}
+
+.footer-location{
+  padding: 0.5rem;
+}
+
+.footer-location img{
+  width: 100%;
+  padding-left: -2rem;
+}
+
+.location-container {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.location-container img {
+  display: block;
+  width: 100%; /* Ensure the image takes the full width of the container */
+}
+
+.location-container iframe {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%; 
+  height: 85%; 
+  border: 0; 
+}
+
+.footer-divider{
+  width: 90vw;
+  display: block;
+  margin: 0 auto;
+}
+
+.orgainsing-partner{
+  margin-top: 2rem;
+}
+
+.organiser-logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+
+.organiser-logo img{
+  height: 4.5rem;
+  margin: 1rem;
+  height: 6rem;
+  border-radius: 3px;
+}
+
+.copyright{
+  color: #ffffffab;
+  padding: 2rem;
 }
 
 @media screen and (max-width: 1440px) {

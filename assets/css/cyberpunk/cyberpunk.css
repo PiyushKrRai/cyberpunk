@@ -283,7 +283,7 @@ body {
 
 .bg-linear{
     --bg:var(--linear-gradiant1);
-    background-color: linear-gradient( var(--linear-gradiant1) 0%, var(--linear-gradiant2) 100%) !important;
+    background-color: linear-gradient( var(--linear-gradiant1) 100%, var(--linear-gradiant2) 0%) !important;
 }
 
 /*#endregion*/

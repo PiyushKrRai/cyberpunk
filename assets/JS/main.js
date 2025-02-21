@@ -13,7 +13,7 @@ document.addEventListener("scroll", () => {
 
 // =================TIMER================
 
-var countDownDate = new Date("Feb 5, 2025 00:00:00").getTime();
+var countDownDate = new Date("Mar 29, 2025 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -43,7 +43,7 @@ var x = setInterval(function () {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.querySelector(".timer-caption").innerHTML = "Registration Closed";
+    document.querySelector(".timer-caption").innerHTML = "Hackathon Ended";
     document.querySelector("#days-count").textContent = "00";
     document.querySelector("#hours-count").textContent = "00";
     document.querySelector("#mins-count").textContent = "00";

@@ -928,10 +928,11 @@ body {
 }
 
 .cyber-tile-clip::after{
-    transform: scaleY(0.95);
-    margin-left: 5px;
+    height: calc(100% - 10px);
     width: calc(100% - 10px);
     padding: 10px 0px;
+    justify-content: center;
+    place-self: center;
 }
 
 .cyber-tile-small::after{
@@ -1395,9 +1396,9 @@ label {
         --root-font-size: 14px;
     }
 
-    .cyber-tile {
+    /* .cyber-tile {
         max-width: 100%;
-    }
+    } */
 
     .cyber-tile-big {
         max-width: 100%;

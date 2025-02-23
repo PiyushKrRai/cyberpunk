@@ -1278,9 +1278,14 @@ section {
     font-size: 1rem !important;
   }
 
+  .prize-section h4 {
+    font-size: 0.75rem !important;
+  }
+
   .prize-section h5 {
     font-size: 0.5rem !important;
   }
+
 
   .prize h2 {
     font-size: 1.25rem !important;
@@ -1394,7 +1399,8 @@ section {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .footer-content h5, h4{
+  .footer-content h5,
+  h4 {
     font-size: 1.25rem !important;
   }
 }

@@ -640,7 +640,7 @@ section {
 }
 
 .track-box>p>img {
-  filter: drop-shadow(2px 2px 4px var(--yellow));
+  filter: drop-shadow(2px 2px 5px var(--light-gray));
 }
 
 .sponsor-section,

@@ -27,6 +27,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
 
+  <script src="https://unpkg.com/scrollreveal"></script>
 
   <title> AceHack - 4.0 | UEM Jaipur</title>
 </head>
@@ -43,13 +44,14 @@
       </div>
       <a> </a>
       <ul class="nav-list">
-        <li class="nav-item cyber-tile col"><a>About</a></li>
-        <li class="nav-item cyber-tile col"><a>Timeline</a></li>
-        <li class="nav-item cyber-tile col"><a>Digital Swags</a></li>
-        <li class="nav-item cyber-tile col"><a>Tracks</a></li>
-        <li class="nav-item cyber-tile col"><a>Guests</a></li>
-        <li class="nav-item cyber-tile col"><a>FAQ</a></li>
-        <li class="nav-item cyber-tile col"><a>REGISTER NOW !!</a></li>
+        <li class="nav-item cyber-tile col"><a href="#about">About</a></li>
+        <li class="nav-item cyber-tile col"><a href="#">Timeline</a></li>
+        <li class="nav-item cyber-tile col"><a href="https://acehack-digital-swags.vercel.app/">Digital Swags</a></li>
+        <li class="nav-item cyber-tile col"><a href="#tracks">Tracks</a></li>
+        <li class="nav-item cyber-tile col"><a href="#guests">Guests</a></li>
+        <li class="nav-item cyber-tile col"><a href="#">FAQ</a></li>
+        <li class="nav-item cyber-tile col"><a href="#footer">Contact</a>
+        </li>
       </ul>
     </div>
     <!-- <marquee class="countdown .cyber-banner" ><p>REGISTRATION ENDS IN <span id="timer"></span></p></marquee> -->
@@ -119,7 +121,7 @@
     <br>
   </section>
 
-  <section class="about">
+  <section class="about" id="about">
     <!---<section class=" about d-flex flex-row">--->
 
 
@@ -280,7 +282,7 @@
   <!--BLACK - dots-->
   <section class="album cyber-razor-top cyber-razor-bottom bg-blue">
     <div class="d-flex justify-content-center">
-      <h2 class="cyber-title title-h2 fg-yellow">Glimpses</h2>
+      <h1 class="cyber-title title-h1 fg-yellow">Glimpses</h1>
     </div>
   </section>
 
@@ -357,10 +359,10 @@
   </section>
   <!--=============== Tracks ===============-->
   <!--yellow--->
-  <section class="tracks-section cyber-razor-top cyber-razor-bottom bg-blue">
+  <section class="tracks-section cyber-razor-top cyber-razor-bottom bg-blue" id="tracks">
 
     <div class="d-flex justify-content-center track">
-      <h2 class="cyber-title title-h1 fg-yellow">Tracks</h2>
+      <h1 class="cyber-title title-h1 fg-yellow">Tracks</h1>
     </div>
 
     <div class="prize-row track-start track-row">
@@ -427,7 +429,7 @@
     </div>
   </section>
 
-  <section class="sponsor-section cyber-razor-top bg-gray">
+  <section class="sponsor-section cyber-razor-top bg-gray" id="sponsors">
     <div class="d-flex justify-content-center">
       <h2 class="cyber-title title-h1 fg-yellow">Sponsors</h2>
     </div>
@@ -617,11 +619,64 @@
     </div>
 
   </section>
+
+  <!--=============== Benefit/ Perks ===============-->
+  <section class="perks-section cyber-razor-top cyber-razor-bottom bg-blue" id="perks">
+    <div class="d-flex justify-content-center">
+      <h1 class="cyber-title title-h1 fg-white">Why should you attend <span class="fg-yellow">AceHack 4.0</span>?</h1>
+    </div>
+
+    <div class="prize-row justify-content-center d-flex">
+      <div class="perks-container justify-content-center cyber-tile-clip cyber-tile bg-yellow">
+        <p>
+          <img src="assets/imgs/why/tech-leader.svg" alt="">
+        </p>
+        <h6 class="fg-white title-h6">Meet India’s biggest Tech Giants</h6>
+      </div>
+
+      <div class="perks-container justify-content-center cyber-tile-clip cyber-tile bg-yellow">
+        <p>
+          <img src="assets/imgs/why/real-project.svg" alt="">
+        </p>
+        <h6 class="fg-white title-h6">Opportunities to work on a real life problem statement</h6>
+      </div>
+
+      <div class="perks-container justify-content-center cyber-tile-clip cyber-tile bg-yellow">
+        <p>
+          <img src="assets/imgs/why/like-minded.svg" alt="">
+        </p>
+        <h6 class="fg-white title-h6">Connect with like-minded people</h6>
+      </div>
+
+      <div class="perks-container justify-content-center cyber-tile-clip cyber-tile bg-yellow">
+        <p>
+          <img src="assets/imgs/why/internship.svg" alt="">
+        </p>
+        <h6 class="fg-white title-h6">Job Opportunities</h6>
+      </div>
+
+      <div class="perks-container justify-content-center cyber-tile-clip cyber-tile bg-yellow">
+        <p>
+          <img src="assets/imgs/why/food-fun.svg" alt="">
+        </p>
+        <h6 class="fg-white title-h6">Get free food & fun environment</h6>
+      </div>
+
+      <div class="perks-container justify-content-center cyber-tile-clip cyber-tile bg-yellow">
+        <p>
+          <img src="assets/imgs/why/swags.svg" alt="">
+        </p>
+        <h6 class="fg-white title-h6">Chance to win exciting swags and goodies</h6>
+      </div>
+
+    </div>
+  </section>
+
   <!--=============== Judges / Mentors ===============-->
   <!--Yellow-->
-  <section class="judges-section cyber-razor-bottom bg-blue">
+  <section class="judges-section cyber-razor-bottom bg-blue" id="guests">
     <div class="d-flex justify-content-center">
-      <h2 class="cyber-title title-h1 fg-yellow">Mentors & Judges</h2>
+      <h1 class="cyber-title title-h1 fg-yellow">Mentors & Judges</h1>
     </div>
     <div class="prize-row d-flex justify-content-center">
 
@@ -748,7 +803,7 @@
   </section>
   <!--=============== Footer ===============-->
   <!--black-->
-  <section class="footer-section cyber-razor-top bg-black fg-white">
+  <section class="footer-section cyber-razor-top bg-black fg-white" id="footer">
     <div class="footer-content">
       <div class="footer-logo">
         <div class="logo">
@@ -761,24 +816,32 @@
             <h5>Quick Links</h5>
           </div>
           <div class="link">
-            <a href="#">
-              <p><a href="#">About</a></p>
-            </a>
+            <p>
+              <a href="#about">
+                About
+              </a>
+            </p>
           </div>
           <div class="link">
-            <a href="#">
-              <p><a href="#">Schedule</a></p>
-            </a>
+            <p>
+              <a href="#">
+                Schedule
+              </a>
+            </p>
           </div>
           <div class="link">
-            <a href="#">
-              <p><a href="#">Sponsor</a></p>
-            </a>
+            <p>
+              <a href="#sponsors">
+                Sponsor
+              </a>
+            </p>
           </div>
           <div class="link">
-            <a href="#">
-              <p><a href="#">FAQs</a></p>
-            </a>
+            <p>
+              <a href="#">
+                FAQs
+              </a>
+            </p>
           </div>
 
         </div>
@@ -811,19 +874,13 @@
             <h5>Archives</h5>
           </div>
           <div class="link">
-            <a href="#">
-              <p><a href="#">AceHack 1.0</a></p>
-            </a>
+            <p><a href="https://sahityaroy.github.io/ace-hack-uemj/">AceHack 1.0</a></p>
           </div>
           <div class="link">
-            <a href="#">
-              <p><a href="#">AceHack 2.0</a></p>
-            </a>
+            <p><a href="https://acehack2-0.vercel.app/">AceHack 2.0</a></p>
           </div>
           <div class="link">
-            <a href="#">
-              <p><a href="#">AceHack 3.0</a></p>
-            </a>
+            <p><a href="https://acehack3-0.vercel.app/">AceHack 3.0</a></p>
           </div>
         </div>
       </div>

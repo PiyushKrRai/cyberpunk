@@ -120,3 +120,24 @@ function changeClass() {
     }
   }
 }
+
+// ====================== Scroll Reveal ======================
+
+// Function to apply ScrollReveal to all elements with a specific class
+function applyScrollReveal(selector) {
+  const elements = document.querySelectorAll(selector);
+  elements.forEach(element => {
+    ScrollReveal().reveal(element);
+  });
+}
+
+// Apply ScrollReveal to all relevant sections
+document.addEventListener('DOMContentLoaded', function() {
+  applyScrollReveal('.about-stats');
+  applyScrollReveal('.prize-section');
+  applyScrollReveal('.tracks-section');
+  applyScrollReveal('.sponsor-section');
+  applyScrollReveal('.judges-section');
+  applyScrollReveal('.footer-section');
+  // Add more selectors as needed
+});

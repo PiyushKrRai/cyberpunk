@@ -50,7 +50,7 @@ body.nav-open {
 
 a {
   text-decoration: none !important;
-  color: black;
+  /* color: black !important; */
 }
 
 section {
@@ -64,7 +64,6 @@ section {
   position: fixed;
   z-index: 5;
   background-color: #00000084;
-  color: #fff;
   padding-top: 1rem;
   text-align: center;
   top: 0vh;
@@ -160,6 +159,10 @@ section {
 .nav-list.active {
   display: flex;
   flex-direction: column;
+}
+
+.nav-list li a {
+  color: #fff !important;
 }
 
 @keyframes slideNav {
@@ -641,7 +644,8 @@ section {
 }
 
 .sponsor-section,
-.judges-section {
+.judges-section,
+.perks-section {
   padding: 2rem;
   padding-bottom: 5rem;
 }
@@ -666,13 +670,13 @@ section {
   justify-content: center;
 }
 
+.sponsor-box h6,
 .sponsor-box h5 {
   margin-top: 0;
-  padding: 0.5rem;
   text-align: center;
   align-items: center;
   width: 100%;
-  height: 3rem;
+  height: fit-content;
   box-sizing: border-box;
 }
 
@@ -693,6 +697,33 @@ section {
   flex-direction: row;
   justify-content: center;
   margin: 1rem;
+}
+
+
+.perks-section .prize-row {
+  padding: 0 2rem !important;
+}
+
+.perks-container {
+  flex-direction: column;
+  justify-content: space-between !important;
+  flex-wrap: wrap;
+  text-wrap: wrap;
+  margin: 1rem;
+  width: 18rem !important;
+  text-align: center;
+  padding: 1rem !important;
+}
+
+.perks-container p{
+  height: 8rem;
+  max-width: 15rem;
+  place-self: center !important;
+  align-content: center;
+}
+.perks-container img {
+  max-width: 8rem;
+  filter: drop-shadow(2px 2px 4px var(--light-gray));
 }
 
 .judges-section {
@@ -1157,6 +1188,21 @@ section {
     font-size: 0.7rem !important;
   }
 
+  .nav-list li.nav-item {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.135);
+    padding: 1.5rem;
+  }
+
+  .nav-list li.nav-item:last-child {
+    border-bottom: none;
+  }
+
+  li.cyber-tile {
+    width: 80vw;
+    --tile-edges: 0px !important;
+    min-height: fit-content;
+  }
+
   .parallax-container,
   .background-layer,
   .middle-layer,
@@ -1254,6 +1300,15 @@ section {
     margin-top: 0;
   }
 
+  .prize p {
+    margin-bottom: 0.2rem;
+  }
+
+  .prize-img {
+    width: 75% !important;
+    margin-bottom: 0rem;
+  }
+
   .prize-section .prize-row {
     flex-wrap: nowrap;
   }
@@ -1276,6 +1331,7 @@ section {
 
   .prize-section h3 {
     font-size: 1rem !important;
+    margin-bottom: 0.2rem;
   }
 
   .prize-section h4 {
@@ -1285,7 +1341,6 @@ section {
   .prize-section h5 {
     font-size: 0.5rem !important;
   }
-
 
   .prize h2 {
     font-size: 1.25rem !important;
@@ -1360,7 +1415,7 @@ section {
     padding-bottom: 0 !important;
     place-self: center;
     text-align: center;
-    height: 11rem !important;
+    height: 10.5rem !important;
   }
 
   .prize-row.in-kind .sponsor-box {
@@ -1372,8 +1427,10 @@ section {
     font-size: 1.2rem !important;
   }
 
-  .sponsor-box h6 {
+  .sponsor-box h6,
+  .title-h6 {
     font-size: 1rem !important;
+    text-align: center !important;
   }
 
   .sponsor-offer {

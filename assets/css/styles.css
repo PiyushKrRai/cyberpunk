@@ -769,7 +769,7 @@ section {
 
 .judges-profile::after {
   content: '';
-  background-image: url('/assets/css/box-frame.svg');
+  background-image: url('box-frame.svg');
   background-position: center;
   background-size: contain;
   position: absolute;

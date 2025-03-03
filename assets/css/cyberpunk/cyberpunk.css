@@ -48,8 +48,8 @@
     --yellow: #F2FB06;
     /*theme variables*/
 
-    --linear-gradiant1:#004044;
-    --linear-gradiant2:#001517;
+    --linear-gradiant1: #004044;
+    --linear-gradiant2: #001517;
 
 
     --fg: var(--black);
@@ -281,9 +281,9 @@ body {
     --ac: var(--dark);
 }
 
-.bg-linear{
-    --bg:var(--linear-gradiant1);
-    background-color: linear-gradient( var(--linear-gradiant1) 100%, var(--linear-gradiant2) 0%) !important;
+.bg-linear {
+    --bg: var(--linear-gradiant1);
+    background-color: linear-gradient(var(--linear-gradiant1) 100%, var(--linear-gradiant2) 0%) !important;
 }
 
 /*#endregion*/
@@ -884,16 +884,19 @@ body {
     letter-spacing: 2px;
 }
 
-.title-h1{
+.title-h1 {
     font-size: 3.5rem;
 }
-.title-h2{
+
+.title-h2 {
     font-size: 2.5rem;
 }
-.title-h3{
+
+.title-h3 {
     font-size: 2rem;
 }
-.title-h4{
+
+.title-h4 {
     font-size: 1.5rem;
 }
 
@@ -927,7 +930,7 @@ body {
     z-index: -1;
 }
 
-.cyber-tile-clip::after{
+.cyber-tile-clip::after {
     height: calc(100% - 10px);
     width: calc(100% - 10px);
     padding: 10px 0px;
@@ -935,7 +938,7 @@ body {
     place-self: center;
 }
 
-.cyber-tile-small::after{
+.cyber-tile-small::after {
     scale: 0.95;
 }
 

@@ -284,7 +284,8 @@ section {
 }
 
 .middle-layer {
-  background-image: url("logo-main.png");
+  background-image: url("DESKTOP\ website.png");
+  scale: 0.8;
 }
 
 .front-layer {
@@ -1241,8 +1242,9 @@ section {
   }
 
   .middle-layer {
-    background-image: url("logo-main-m.png");
-    background-size: 200%;
+    background-image: url("MOBILE\ website.png");
+    /* background-size: 200%; */
+    scale: 1;
   }
 
   .front-layer {

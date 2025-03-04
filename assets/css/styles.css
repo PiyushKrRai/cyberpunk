@@ -453,7 +453,7 @@ section {
 }
 
 .timeline .column .title h6 {
-  margin-top: -10px;
+  /* margin-top: -10px; */
   color: #fff;
 }
 
@@ -1075,6 +1075,19 @@ section {
 
   .stat-info h2 {
     margin-bottom: 0;
+  }
+
+  .timeline .column{
+    margin: 2rem 7rem;
+  }
+
+  .timeline .column .title h3:before{
+    left: -3.7rem;
+    top: 1rem;
+  }
+
+  .timeline h6{
+    text-align: left !important;
   }
 
   .prize-pool::before {

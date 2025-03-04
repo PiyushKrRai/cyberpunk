@@ -864,13 +864,15 @@ section {
   display: flex;
   flex-direction: column;
   margin: 1rem 1rem;
-  padding: 1rem 1rem;
   background: var(--blue);
   border-radius: 16px;
+  width: 14rem;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2.7px);
   -webkit-backdrop-filter: blur(2.7px);
   border: 1px solid var(--blue);
+  place-self: start;
+  min-height: 20rem;
 }
 
 .judges-img {
@@ -879,9 +881,30 @@ section {
   filter: drop-shadow(0px 0px 10px var(--white));
 }
 
+.desc {
+  height: 2.5rem;
+  /* background-color: var(--red) !important; */
+  height: fit-content;
+}
+
+.desc h6,
+.desc p {
+  margin-bottom: 3px !important;
+}
+
+.desc p {
+  font-size: 0.75rem;
+  text-align: center;
+  color: var(--white) !important;
+}
+
+.judges-profile {
+  margin: 1.5rem 1rem 0.5rem;
+}
+
 .judges-profile::after {
   content: '';
-  background-image: url('box-frame.svg');
+  /* background-image: url('box-frame.svg'); */
   background-position: center;
   background-size: contain;
   position: absolute;
@@ -891,6 +914,10 @@ section {
   bottom: 0.5rem;
   height: 100%;
   scale: 1.05;
+}
+
+.judges-container .social-links{
+  display: none !important;
 }
 
 .footer-content {
@@ -1078,16 +1105,16 @@ section {
     margin-bottom: 0;
   }
 
-  .timeline .column{
+  .timeline .column {
     margin: 2rem 7rem;
   }
 
-  .timeline .column .title h3:before{
+  .timeline .column .title h3:before {
     left: -3.7rem;
     top: 1rem;
   }
 
-  .timeline h6{
+  .timeline h6 {
     text-align: left !important;
   }
 
